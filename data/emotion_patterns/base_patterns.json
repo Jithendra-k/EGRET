@@ -1,0 +1,746 @@
+{
+  "guilt": {
+    "common_causes": [
+      "missing_obligations",
+      "breaking_promises",
+      "letting_others_down",
+      "being_late",
+      "failing_responsibilities",
+      "making_mistakes"
+    ],
+    "related_emotions": [
+      "shame",
+      "regret",
+      "anxiety",
+      "sadness",
+      "responsibility"
+    ],
+    "response_patterns": [
+      "Acknowledge their feelings of guilt",
+      "Help assess the situation realistically",
+      "Suggest constructive actions",
+      "Offer support in making amends",
+      "Encourage self-compassion"
+    ]
+  },
+  "afraid": {
+    "common_causes": [
+      "dangerous_situation",
+      "health_concerns",
+      "unknown_threats",
+      "dark_places",
+      "being_alone",
+      "unexpected_noises"
+    ],
+    "related_emotions": [
+      "terrified",
+      "anxious",
+      "apprehensive",
+      "worried",
+      "nervous"
+    ],
+    "response_patterns": [
+      "Acknowledge their fear and show understanding",
+      "Offer reassurance and support",
+      "Help assess the real threat level",
+      "Share safety strategies",
+      "Stay present with them"
+    ]
+  },
+  "angry": {
+    "common_causes": [
+      "unfair_treatment",
+      "betrayal",
+      "disrespect",
+      "broken_promises",
+      "injustice",
+      "personal_violation"
+    ],
+    "related_emotions": [
+      "furious",
+      "annoyed",
+      "disgusted",
+      "frustrated",
+      "disappointed"
+    ],
+    "response_patterns": [
+      "Validate their anger without fueling it",
+      "Listen to their grievances",
+      "Help find constructive solutions",
+      "Acknowledge the unfairness",
+      "Offer support in resolution"
+    ]
+  },
+  "annoyed": {
+    "common_causes": [
+      "repeated_disturbances",
+      "minor_inconveniences",
+      "inconsiderate_behavior",
+      "waiting_too_long",
+      "small_frustrations",
+      "interruptions"
+    ],
+    "related_emotions": [
+      "angry",
+      "irritated",
+      "frustrated",
+      "impatient",
+      "displeased"
+    ],
+    "response_patterns": [
+      "Acknowledge the irritation",
+      "Validate their feelings",
+      "Suggest practical solutions",
+      "Help maintain perspective",
+      "Offer distraction techniques"
+    ]
+  },
+  "anticipating": {
+    "common_causes": [
+      "upcoming_event",
+      "planned_changes",
+      "future_opportunities",
+      "awaited_news",
+      "expected_outcomes",
+      "scheduled_meetings"
+    ],
+    "related_emotions": [
+      "excited",
+      "hopeful",
+      "anxious",
+      "prepared",
+      "eager"
+    ],
+    "response_patterns": [
+      "Share in their anticipation",
+      "Discuss preparations",
+      "Explore possibilities",
+      "Encourage positive outlook",
+      "Help channel energy constructively"
+    ]
+  },
+  "anxious": {
+    "common_causes": [
+      "uncertainty",
+      "important_deadlines",
+      "social_situations",
+      "performance_pressure",
+      "health_concerns",
+      "life_changes"
+    ],
+    "related_emotions": [
+      "afraid",
+      "apprehensive",
+      "worried",
+      "nervous",
+      "stressed"
+    ],
+    "response_patterns": [
+      "Validate their anxiety",
+      "Share coping strategies",
+      "Break down concerns",
+      "Offer grounding techniques",
+      "Provide reassurance"
+    ]
+  },
+  "apprehensive": {
+    "common_causes": [
+      "new_situations",
+      "uncertain_outcomes",
+      "challenging_tasks",
+      "meeting_new_people",
+      "making_decisions",
+      "taking_risks"
+    ],
+    "related_emotions": [
+      "anxious",
+      "afraid",
+      "nervous",
+      "hesitant",
+      "unsure"
+    ],
+    "response_patterns": [
+      "Acknowledge their concerns",
+      "Share similar experiences",
+      "Offer gentle encouragement",
+      "Discuss preparation steps",
+      "Provide supportive presence"
+    ]
+  },
+  "ashamed": {
+    "common_causes": [
+      "mistakes_made",
+      "moral_transgressions",
+      "public_embarrassment",
+      "failing_expectations",
+      "personal_shortcomings",
+      "social_faux_pas"
+    ],
+    "related_emotions": [
+      "guilty",
+      "embarrassed",
+      "disappointed",
+      "regretful",
+      "humiliated"
+    ],
+    "response_patterns": [
+      "Show understanding without judgment",
+      "Normalize human imperfection",
+      "Encourage self-forgiveness",
+      "Focus on learning",
+      "Offer perspective"
+    ]
+  },
+  "caring": {
+    "common_causes": [
+      "helping_others",
+      "supporting_loved_ones",
+      "nurturing_relationships",
+      "showing_compassion",
+      "expressing_concern",
+      "protecting_others"
+    ],
+    "related_emotions": [
+      "loving",
+      "concerned",
+      "empathetic",
+      "protective",
+      "supportive"
+    ],
+    "response_patterns": [
+      "Acknowledge their kindness",
+      "Support their efforts",
+      "Share appreciation",
+      "Encourage self-care",
+      "Validate their impact"
+    ]
+  },
+  "confident": {
+    "common_causes": [
+      "preparation",
+      "past_successes",
+      "skill_mastery",
+      "positive_feedback",
+      "self-improvement",
+      "overcoming_challenges"
+    ],
+    "related_emotions": [
+      "proud",
+      "prepared",
+      "excited",
+      "hopeful",
+      "empowered"
+    ],
+    "response_patterns": [
+      "Celebrate their confidence",
+      "Reinforce their capabilities",
+      "Share excitement",
+      "Encourage forward momentum",
+      "Support their vision"
+    ]
+  },
+  "content": {
+    "common_causes": [
+      "peaceful_moments",
+      "achieved_goals",
+      "balanced_life",
+      "simple_pleasures",
+      "satisfaction",
+      "harmony"
+    ],
+    "related_emotions": [
+      "grateful",
+      "satisfied",
+      "peaceful",
+      "happy",
+      "serene"
+    ],
+    "response_patterns": [
+      "Share in their contentment",
+      "Appreciate the moment",
+      "Encourage mindfulness",
+      "Validate their peace",
+      "Support continued balance"
+    ]
+  },
+  "devastated": {
+    "common_causes": [
+      "major_loss",
+      "heartbreak",
+      "tragic_news",
+      "severe_disappointment",
+      "life_altering_events",
+      "personal_trauma"
+    ],
+    "related_emotions": [
+      "sad",
+      "hopeless",
+      "grief-stricken",
+      "heartbroken",
+      "shocked"
+    ],
+    "response_patterns": [
+      "Offer deep empathy",
+      "Provide steady support",
+      "Acknowledge the pain",
+      "Stay present",
+      "Share resources for help"
+    ]
+  },
+  "disappointed": {
+    "common_causes": [
+      "unmet_expectations",
+      "failed_plans",
+      "letdowns",
+      "missed_opportunities",
+      "broken_promises",
+      "personal_failures"
+    ],
+    "related_emotions": [
+      "sad",
+      "frustrated",
+      "discouraged",
+      "hurt",
+      "let_down"
+    ],
+    "response_patterns": [
+      "Validate their disappointment",
+      "Show understanding",
+      "Explore alternatives",
+      "Offer perspective",
+      "Help find new opportunities"
+    ]
+  },
+  "disgusted": {
+    "common_causes": [
+      "moral_violations",
+      "unethical_behavior",
+      "unsanitary_conditions",
+      "offensive_content",
+      "betrayal_of_values",
+      "inappropriate_actions"
+    ],
+    "related_emotions": [
+      "angry",
+      "appalled",
+      "revolted",
+      "outraged",
+      "disapproving"
+    ],
+    "response_patterns": [
+      "Validate their reaction",
+      "Share understanding",
+      "Focus on solutions",
+      "Discuss boundaries",
+      "Support positive action"
+    ]
+  },
+  "embarrassed": {
+    "common_causes": [
+      "public_mistakes",
+      "social_blunders",
+      "awkward_situations",
+      "unwanted_attention",
+      "being_unprepared",
+      "wardrobe_malfunctions"
+    ],
+    "related_emotions": [
+      "ashamed",
+      "self-conscious",
+      "uncomfortable",
+      "anxious",
+      "mortified"
+    ],
+    "response_patterns": [
+      "Normalize the situation",
+      "Share similar experiences",
+      "Use gentle humor",
+      "Offer perspective",
+      "Provide reassurance"
+    ]
+  },
+  "excited": {
+    "common_causes": [
+      "good_news",
+      "upcoming_events",
+      "achievements",
+      "new_opportunities",
+      "positive_changes",
+      "pleasant_surprises"
+    ],
+    "related_emotions": [
+      "happy",
+      "anticipating",
+      "joyful",
+      "enthusiastic",
+      "eager"
+    ],
+    "response_patterns": [
+      "Share their excitement",
+      "Show enthusiasm",
+      "Ask for details",
+      "Celebrate together",
+      "Encourage expression"
+    ]
+  },
+  "faithful": {
+    "common_causes": [
+      "spiritual_experiences",
+      "trust_in_others",
+      "belief_systems",
+      "loyal_relationships",
+      "personal_convictions",
+      "hope_in_difficult_times"
+    ],
+    "related_emotions": [
+      "trusting",
+      "hopeful",
+      "confident",
+      "peaceful",
+      "assured"
+    ],
+    "response_patterns": [
+      "Respect their faith",
+      "Support their beliefs",
+      "Share appreciation",
+      "Encourage strength",
+      "Validate their trust"
+    ]
+  },
+  "furious": {
+    "common_causes": [
+      "severe_injustice",
+      "major_betrayal",
+      "deliberate_harm",
+      "extreme_disrespect",
+      "repeated_violations",
+      "intentional_deception"
+    ],
+    "related_emotions": [
+      "angry",
+      "outraged",
+      "enraged",
+      "livid",
+      "indignant"
+    ],
+    "response_patterns": [
+      "Acknowledge intense anger",
+      "Validate their feelings",
+      "Ensure safety",
+      "Guide to constructive outlets",
+      "Offer steady support"
+    ]
+  },
+  "grateful": {
+    "common_causes": [
+      "receiving_help",
+      "unexpected_kindness",
+      "positive_outcomes",
+      "support_from_others",
+      "overcoming_challenges",
+      "life_blessings"
+    ],
+    "related_emotions": [
+      "thankful",
+      "appreciative",
+      "content",
+      "happy",
+      "blessed"
+    ],
+    "response_patterns": [
+      "Share in their gratitude",
+      "Celebrate the moment",
+      "Acknowledge goodness",
+      "Encourage expression",
+      "Support appreciation"
+    ]
+  },
+  "guilty": {
+    "common_causes": [
+      "hurting_others",
+      "breaking_promises",
+      "moral_lapses",
+      "neglecting_responsibilities",
+      "letting_people_down",
+      "making_mistakes"
+    ],
+    "related_emotions": [
+      "ashamed",
+      "regretful",
+      "remorseful",
+      "sorry",
+      "responsible"
+    ],
+    "response_patterns": [
+      "Acknowledge remorse",
+      "Encourage making amends",
+      "Support learning",
+      "Guide to forgiveness",
+      "Focus on growth"
+    ]
+  },
+  "hopeful": {
+    "common_causes": [
+      "positive_changes",
+      "new_beginnings",
+      "progress_made",
+      "support_received",
+      "opportunities_ahead",
+      "overcoming_obstacles"
+    ],
+    "related_emotions": [
+      "optimistic",
+      "excited",
+      "encouraged",
+      "motivated",
+      "inspired"
+    ],
+    "response_patterns": [
+      "Share optimism",
+      "Support dreams",
+      "Encourage planning",
+      "Celebrate possibility",
+      "Reinforce hope"
+    ]
+  },
+  "impressed": {
+    "common_causes": [
+      "exceptional_performance",
+      "unexpected_skill",
+      "remarkable_achievements",
+      "innovative_solutions",
+      "outstanding_qualities",
+      "surprising_talents"
+    ],
+    "related_emotions": [
+      "amazed",
+      "admiring",
+      "inspired",
+      "proud",
+      "respectful"
+    ],
+    "response_patterns": [
+      "Express admiration",
+      "Show genuine interest",
+      "Ask about process",
+      "Share appreciation",
+      "Encourage development"
+    ]
+  },
+  "jealous": {
+    "common_causes": [
+      "others_success",
+      "perceived_competition",
+      "relationship_threats",
+      "missed_opportunities",
+      "comparing_achievements",
+      "feeling_left_out"
+    ],
+    "related_emotions": [
+      "envious",
+      "insecure",
+      "resentful",
+      "anxious",
+      "competitive"
+    ],
+    "response_patterns": [
+      "Validate feelings gently",
+      "Focus on personal growth",
+      "Explore underlying needs",
+      "Encourage self-compassion",
+      "Share perspective"
+    ]
+  },
+  "joyful": {
+    "common_causes": [
+      "personal_achievements",
+      "celebrations",
+      "positive_connections",
+      "delightful_surprises",
+      "fulfilled_wishes",
+      "beautiful_moments"
+    ],
+    "related_emotions": [
+      "happy",
+      "excited",
+      "grateful",
+      "elated",
+      "delighted"
+    ],
+    "response_patterns": [
+      "Share their joy",
+      "Celebrate together",
+      "Express happiness",
+      "Encourage savoring",
+      "Support expression"
+    ]
+  },
+  "lonely": {
+    "common_causes": [
+      "social_isolation",
+      "missing_connections",
+      "feeling_misunderstood",
+      "being_alone",
+      "lack_of_support",
+      "disconnection"
+    ],
+    "related_emotions": [
+      "sad",
+      "isolated",
+      "melancholy",
+      "empty",
+      "yearning"
+    ],
+    "response_patterns": [
+      "Show presence",
+      "Acknowledge feelings",
+      "Offer connection",
+      "Share understanding",
+      "Suggest gentle activities"
+    ]
+  },
+  "nostalgic": {
+    "common_causes": [
+      "old_memories",
+      "familiar_places",
+      "childhood_reminders",
+      "past_experiences",
+      "traditional_events",
+      "meaningful_objects"
+    ],
+    "related_emotions": ["sentimental", "melancholy", "wistful", "reflective", "longing"],
+    "response_patterns": [
+      "Share in reminiscence",
+      "Encourage storytelling",
+      "Validate memories",
+      "Connect past to present",
+      "Appreciate experiences"
+    ]
+  },
+  "prepared": {
+    "common_causes": [
+      "thorough_planning",
+      "practiced_skills",
+      "organized_approach",
+      "anticipated_challenges",
+      "readiness_feeling",
+      "completed_preparations"
+    ],
+    "related_emotions": ["confident", "ready", "focused", "determined", "composed"],
+    "response_patterns": [
+      "Acknowledge preparation",
+      "Reinforce confidence",
+      "Support readiness",
+      "Share excitement",
+      "Offer encouragement"
+    ]
+  },
+  "proud": {
+    "common_causes": [
+      "personal_achievements",
+      "overcoming_obstacles",
+      "helping_others",
+      "reaching_goals",
+      "recognition_received",
+      "skill_mastery"
+    ],
+    "related_emotions": ["accomplished", "confident", "satisfied", "fulfilled", "successful"],
+    "response_patterns": [
+      "Celebrate achievement",
+      "Show admiration",
+      "Acknowledge effort",
+      "Share pride",
+      "Encourage reflection"
+    ]
+  },
+  "sad": {
+    "common_causes": [
+      "personal_loss",
+      "disappointments",
+      "difficult_changes",
+      "failures",
+      "missing_someone",
+      "emotional_pain"
+    ],
+    "related_emotions": ["unhappy", "down", "melancholy", "hurt", "sorrowful"],
+    "response_patterns": [
+      "Show empathy",
+      "Validate feelings",
+      "Offer comfort",
+      "Stay present",
+      "Provide hope"
+    ]
+  },
+  "sentimental": {
+    "common_causes": [
+      "meaningful_memories",
+      "special_occasions",
+      "personal_treasures",
+      "family_traditions",
+      "life_milestones",
+      "emotional_attachments"
+    ],
+    "related_emotions": ["nostalgic", "touched", "moved", "tender", "affectionate"],
+    "response_patterns": [
+      "Share in feeling",
+      "Value memories",
+      "Express appreciation",
+      "Honor significance",
+      "Support reflection"
+    ]
+  },
+  "surprised": {
+    "common_causes": [
+      "unexpected_events",
+      "sudden_changes",
+      "unexpected_news",
+      "unusual_occurrences",
+      "unexpected_outcomes",
+      "revelations"
+    ],
+    "related_emotions": ["amazed", "astonished", "shocked", "startled", "wonder"],
+    "response_patterns": [
+      "Share surprise",
+      "Process together",
+      "Show interest",
+      "Explore implications",
+      "Support adjustment"
+    ]
+  },
+  "terrified": {
+    "common_causes": [
+      "immediate_danger",
+      "severe_threats",
+      "traumatic_events",
+      "extreme_situations",
+      "overwhelming_fear",
+      "life-threatening_scenarios"
+    ],
+    "related_emotions": ["afraid", "panicked", "horrified", "petrified", "scared"],
+    "response_patterns": [
+      "Ensure safety",
+      "Provide calm presence",
+      "Offer immediate support",
+      "Guide to resources",
+      "Stay connected"
+    ]
+  },
+  "trusting": {
+    "common_causes": [
+      "proven_reliability",
+      "consistent_support",
+      "honest_communication",
+      "shared_values",
+      "demonstrated_integrity",
+      "mutual_respect"
+    ],
+    "related_emotions": ["confident", "secure", "faithful", "assured", "believing"],
+    "response_patterns": [
+      "Honor trust",
+      "Reinforce connection",
+      "Support openness",
+      "Value relationship",
+      "Maintain reliability"
+    ]
+  }
+}

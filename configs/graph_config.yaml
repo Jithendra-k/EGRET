@@ -1,0 +1,66 @@
+# Graph Structure Configuration
+graph_structure:
+  initial_weight: 1.0          # Initial weight for new emotion relationships
+  min_weight: 0.1              # Minimum relationship weight
+  max_weight: 5.0              # Maximum relationship weight
+  weight_increment: 0.1        # How much to strengthen relationships
+  weight_decay: 0.95           # Decay factor for old relationships
+
+# History Management
+history:
+  max_instances: 100           # Maximum number of emotion instances to store
+  recent_window: 10            # Number of recent instances to consider for relationships
+  min_interaction_count: 2     # Minimum interactions to establish reliable relationship
+  cleanup_threshold: 1000      # When to trigger history cleanup
+
+# Relationship Thresholds
+relationships:
+  strong_threshold: 0.7        # Weight threshold for strong relationships
+  weak_threshold: 0.3          # Weight threshold for weak relationships
+  minimum_interactions: 3      # Minimum interactions to consider relationship valid
+  max_related_emotions: 5      # Maximum number of related emotions to track
+
+# Pattern Management
+patterns:
+  update_frequency: 5          # Update patterns every N interactions
+  min_pattern_strength: 0.2    # Minimum strength to maintain a pattern
+  max_patterns_per_emotion: 10 # Maximum patterns to store per emotion
+  pattern_decay: 0.98         # Decay factor for unused patterns
+
+# Response Generation
+responses:
+  context_window: 5            # Number of past interactions to consider
+  min_response_score: 0.3      # Minimum score for response consideration
+  max_response_options: 3      # Maximum response options to generate
+  diversity_threshold: 0.6     # Minimum difference between responses
+
+# Optimization Settings
+optimization:
+  learning_rate: 0.1          # Rate of preference updates
+  exploration_rate: 0.2       # Chance to try new response patterns
+  decay_factor: 0.95          # Decay rate for old preferences
+  update_threshold: 0.05      # Minimum change to trigger update
+
+# Storage Settings
+storage:
+  save_frequency: 10          # Save graph state every N interactions
+  max_file_size_mb: 100      # Maximum size for graph storage
+  backup_frequency: 100       # Create backup every N saves
+  cleanup_threshold: 1000     # When to trigger storage cleanup
+
+# Visualization Settings
+visualization:
+  max_nodes: 50              # Maximum nodes to show in visualization
+  edge_thickness_scale: 2.0  # Scale factor for edge thickness
+  min_edge_weight: 0.2       # Minimum weight to show edge
+  color_scheme:
+    positive_emotions: "#2ecc71"
+    negative_emotions: "#e74c3c"
+    neutral_emotions: "#3498db"
+
+# Debug Settings
+debug:
+  log_relationships: true     # Log relationship updates
+  log_pattern_updates: true   # Log pattern updates
+  track_performance: true     # Track graph performance metrics
+  save_debug_info: true      # Save debug information

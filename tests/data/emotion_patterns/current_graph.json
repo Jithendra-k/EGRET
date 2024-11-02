@@ -1,0 +1,2111 @@
+{
+  "directed": true,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "type": "emotion",
+      "common_causes": [
+        "dangerous_situation",
+        "health_concerns",
+        "unknown_threats",
+        "dark_places",
+        "being_alone",
+        "unexpected_noises"
+      ],
+      "related_emotions": [
+        "terrified",
+        "anxious",
+        "apprehensive",
+        "worried",
+        "nervous"
+      ],
+      "response_patterns": [
+        "Acknowledge their fear and show understanding",
+        "Offer reassurance and support",
+        "Help assess the real threat level",
+        "Share safety strategies",
+        "Stay present with them"
+      ],
+      "id": "afraid"
+    },
+    {
+      "type": "emotion",
+      "common_causes": [
+        "immediate_danger",
+        "severe_threats",
+        "traumatic_events",
+        "extreme_situations",
+        "overwhelming_fear",
+        "life-threatening_scenarios"
+      ],
+      "related_emotions": [
+        "afraid",
+        "panicked",
+        "horrified",
+        "petrified",
+        "scared"
+      ],
+      "response_patterns": [
+        "Ensure safety",
+        "Provide calm presence",
+        "Offer immediate support",
+        "Guide to resources",
+        "Stay connected"
+      ],
+      "id": "terrified"
+    },
+    {
+      "type": "emotion",
+      "common_causes": [
+        "uncertainty",
+        "important_deadlines",
+        "social_situations",
+        "performance_pressure",
+        "health_concerns",
+        "life_changes"
+      ],
+      "related_emotions": [
+        "afraid",
+        "apprehensive",
+        "worried",
+        "nervous",
+        "stressed"
+      ],
+      "response_patterns": [
+        "Validate their anxiety",
+        "Share coping strategies",
+        "Break down concerns",
+        "Offer grounding techniques",
+        "Provide reassurance"
+      ],
+      "id": "anxious"
+    },
+    {
+      "type": "emotion",
+      "common_causes": [
+        "new_situations",
+        "uncertain_outcomes",
+        "challenging_tasks",
+        "meeting_new_people",
+        "making_decisions",
+        "taking_risks"
+      ],
+      "related_emotions": [
+        "anxious",
+        "afraid",
+        "nervous",
+        "hesitant",
+        "unsure"
+      ],
+      "response_patterns": [
+        "Acknowledge their concerns",
+        "Share similar experiences",
+        "Offer gentle encouragement",
+        "Discuss preparation steps",
+        "Provide supportive presence"
+      ],
+      "id": "apprehensive"
+    },
+    {
+      "id": "worried"
+    },
+    {
+      "id": "nervous"
+    },
+    {
+      "type": "emotion",
+      "common_causes": [
+        "unfair_treatment",
+        "betrayal",
+        "disrespect",
+        "broken_promises",
+        "injustice",
+        "personal_violation"
+      ],
+      "related_emotions": [
+        "furious",
+        "annoyed",
+        "disgusted",
+        "frustrated",
+        "disappointed"
+      ],
+      "response_patterns": [
+        "Validate their anger without fueling it",
+        "Listen to their grievances",
+        "Help find constructive solutions",
+        "Acknowledge the unfairness",
+        "Offer support in resolution"
+      ],
+      "id": "angry"
+    },
+    {
+      "type": "emotion",
+      "common_causes": [
+        "severe_injustice",
+        "major_betrayal",
+        "deliberate_harm",
+        "extreme_disrespect",
+        "repeated_violations",
+        "intentional_deception"
+      ],
+      "related_emotions": [
+        "angry",
+        "outraged",
+        "enraged",
+        "livid",
+        "indignant"
+      ],
+      "response_patterns": [
+        "Acknowledge intense anger",
+        "Validate their feelings",
+        "Ensure safety",
+        "Guide to constructive outlets",
+        "Offer steady support"
+      ],
+      "id": "furious"
+    },
+    {
+      "type": "emotion",
+      "common_causes": [
+        "repeated_disturbances",
+        "minor_inconveniences",
+        "inconsiderate_behavior",
+        "waiting_too_long",
+        "small_frustrations",
+        "interruptions"
+      ],
+      "related_emotions": [
+        "angry",
+        "irritated",
+        "frustrated",
+        "impatient",
+        "displeased"
+      ],
+      "response_patterns": [
+        "Acknowledge the irritation",
+        "Validate their feelings",
+        "Suggest practical solutions",
+        "Help maintain perspective",
+        "Offer distraction techniques"
+      ],
+      "id": "annoyed"
+    },
+    {
+      "type": "emotion",
+      "common_causes": [
+        "moral_violations",
+        "unethical_behavior",
+        "unsanitary_conditions",
+        "offensive_content",
+        "betrayal_of_values",
+        "inappropriate_actions"
+      ],
+      "related_emotions": [
+        "angry",
+        "appalled",
+        "revolted",
+        "outraged",
+        "disapproving"
+      ],
+      "response_patterns": [
+        "Validate their reaction",
+        "Share understanding",
+        "Focus on solutions",
+        "Discuss boundaries",
+        "Support positive action"
+      ],
+      "id": "disgusted"
+    },
+    {
+      "id": "frustrated"
+    },
+    {
+      "type": "emotion",
+      "common_causes": [
+        "unmet_expectations",
+        "failed_plans",
+        "letdowns",
+        "missed_opportunities",
+        "broken_promises",
+        "personal_failures"
+      ],
+      "related_emotions": [
+        "sad",
+        "frustrated",
+        "discouraged",
+        "hurt",
+        "let_down"
+      ],
+      "response_patterns": [
+        "Validate their disappointment",
+        "Show understanding",
+        "Explore alternatives",
+        "Offer perspective",
+        "Help find new opportunities"
+      ],
+      "id": "disappointed"
+    },
+    {
+      "id": "irritated"
+    },
+    {
+      "id": "impatient"
+    },
+    {
+      "id": "displeased"
+    },
+    {
+      "type": "emotion",
+      "common_causes": [
+        "upcoming_event",
+        "planned_changes",
+        "future_opportunities",
+        "awaited_news",
+        "expected_outcomes",
+        "scheduled_meetings"
+      ],
+      "related_emotions": [
+        "excited",
+        "hopeful",
+        "anxious",
+        "prepared",
+        "eager"
+      ],
+      "response_patterns": [
+        "Share in their anticipation",
+        "Discuss preparations",
+        "Explore possibilities",
+        "Encourage positive outlook",
+        "Help channel energy constructively"
+      ],
+      "id": "anticipating"
+    },
+    {
+      "type": "emotion",
+      "common_causes": [
+        "good_news",
+        "upcoming_events",
+        "achievements",
+        "new_opportunities",
+        "positive_changes",
+        "pleasant_surprises"
+      ],
+      "related_emotions": [
+        "happy",
+        "anticipating",
+        "joyful",
+        "enthusiastic",
+        "eager"
+      ],
+      "response_patterns": [
+        "Share their excitement",
+        "Show enthusiasm",
+        "Ask for details",
+        "Celebrate together",
+        "Encourage expression"
+      ],
+      "id": "excited"
+    },
+    {
+      "type": "emotion",
+      "common_causes": [
+        "positive_changes",
+        "new_beginnings",
+        "progress_made",
+        "support_received",
+        "opportunities_ahead",
+        "overcoming_obstacles"
+      ],
+      "related_emotions": [
+        "optimistic",
+        "excited",
+        "encouraged",
+        "motivated",
+        "inspired"
+      ],
+      "response_patterns": [
+        "Share optimism",
+        "Support dreams",
+        "Encourage planning",
+        "Celebrate possibility",
+        "Reinforce hope"
+      ],
+      "id": "hopeful"
+    },
+    {
+      "type": "emotion",
+      "common_causes": [
+        "thorough_planning",
+        "practiced_skills",
+        "organized_approach",
+        "anticipated_challenges",
+        "readiness_feeling",
+        "completed_preparations"
+      ],
+      "related_emotions": [
+        "confident",
+        "ready",
+        "focused",
+        "determined",
+        "composed"
+      ],
+      "response_patterns": [
+        "Acknowledge preparation",
+        "Reinforce confidence",
+        "Support readiness",
+        "Share excitement",
+        "Offer encouragement"
+      ],
+      "id": "prepared"
+    },
+    {
+      "id": "eager"
+    },
+    {
+      "id": "stressed"
+    },
+    {
+      "id": "hesitant"
+    },
+    {
+      "id": "unsure"
+    },
+    {
+      "type": "emotion",
+      "common_causes": [
+        "mistakes_made",
+        "moral_transgressions",
+        "public_embarrassment",
+        "failing_expectations",
+        "personal_shortcomings",
+        "social_faux_pas"
+      ],
+      "related_emotions": [
+        "guilty",
+        "embarrassed",
+        "disappointed",
+        "regretful",
+        "humiliated"
+      ],
+      "response_patterns": [
+        "Show understanding without judgment",
+        "Normalize human imperfection",
+        "Encourage self-forgiveness",
+        "Focus on learning",
+        "Offer perspective"
+      ],
+      "id": "ashamed"
+    },
+    {
+      "type": "emotion",
+      "common_causes": [
+        "hurting_others",
+        "breaking_promises",
+        "moral_lapses",
+        "neglecting_responsibilities",
+        "letting_people_down",
+        "making_mistakes"
+      ],
+      "related_emotions": [
+        "ashamed",
+        "regretful",
+        "remorseful",
+        "sorry",
+        "responsible"
+      ],
+      "response_patterns": [
+        "Acknowledge remorse",
+        "Encourage making amends",
+        "Support learning",
+        "Guide to forgiveness",
+        "Focus on growth"
+      ],
+      "id": "guilty"
+    },
+    {
+      "type": "emotion",
+      "common_causes": [
+        "public_mistakes",
+        "social_blunders",
+        "awkward_situations",
+        "unwanted_attention",
+        "being_unprepared",
+        "wardrobe_malfunctions"
+      ],
+      "related_emotions": [
+        "ashamed",
+        "self-conscious",
+        "uncomfortable",
+        "anxious",
+        "mortified"
+      ],
+      "response_patterns": [
+        "Normalize the situation",
+        "Share similar experiences",
+        "Use gentle humor",
+        "Offer perspective",
+        "Provide reassurance"
+      ],
+      "id": "embarrassed"
+    },
+    {
+      "id": "regretful"
+    },
+    {
+      "id": "humiliated"
+    },
+    {
+      "type": "emotion",
+      "common_causes": [
+        "helping_others",
+        "supporting_loved_ones",
+        "nurturing_relationships",
+        "showing_compassion",
+        "expressing_concern",
+        "protecting_others"
+      ],
+      "related_emotions": [
+        "loving",
+        "concerned",
+        "empathetic",
+        "protective",
+        "supportive"
+      ],
+      "response_patterns": [
+        "Acknowledge their kindness",
+        "Support their efforts",
+        "Share appreciation",
+        "Encourage self-care",
+        "Validate their impact"
+      ],
+      "id": "caring"
+    },
+    {
+      "id": "loving"
+    },
+    {
+      "id": "concerned"
+    },
+    {
+      "id": "empathetic"
+    },
+    {
+      "id": "protective"
+    },
+    {
+      "id": "supportive"
+    },
+    {
+      "type": "emotion",
+      "common_causes": [
+        "preparation",
+        "past_successes",
+        "skill_mastery",
+        "positive_feedback",
+        "self-improvement",
+        "overcoming_challenges"
+      ],
+      "related_emotions": [
+        "proud",
+        "prepared",
+        "excited",
+        "hopeful",
+        "empowered"
+      ],
+      "response_patterns": [
+        "Celebrate their confidence",
+        "Reinforce their capabilities",
+        "Share excitement",
+        "Encourage forward momentum",
+        "Support their vision"
+      ],
+      "id": "confident"
+    },
+    {
+      "type": "emotion",
+      "common_causes": [
+        "personal_achievements",
+        "overcoming_obstacles",
+        "helping_others",
+        "reaching_goals",
+        "recognition_received",
+        "skill_mastery"
+      ],
+      "related_emotions": [
+        "accomplished",
+        "confident",
+        "satisfied",
+        "fulfilled",
+        "successful"
+      ],
+      "response_patterns": [
+        "Celebrate achievement",
+        "Show admiration",
+        "Acknowledge effort",
+        "Share pride",
+        "Encourage reflection"
+      ],
+      "id": "proud"
+    },
+    {
+      "id": "empowered"
+    },
+    {
+      "type": "emotion",
+      "common_causes": [
+        "peaceful_moments",
+        "achieved_goals",
+        "balanced_life",
+        "simple_pleasures",
+        "satisfaction",
+        "harmony"
+      ],
+      "related_emotions": [
+        "grateful",
+        "satisfied",
+        "peaceful",
+        "happy",
+        "serene"
+      ],
+      "response_patterns": [
+        "Share in their contentment",
+        "Appreciate the moment",
+        "Encourage mindfulness",
+        "Validate their peace",
+        "Support continued balance"
+      ],
+      "id": "content"
+    },
+    {
+      "type": "emotion",
+      "common_causes": [
+        "receiving_help",
+        "unexpected_kindness",
+        "positive_outcomes",
+        "support_from_others",
+        "overcoming_challenges",
+        "life_blessings"
+      ],
+      "related_emotions": [
+        "thankful",
+        "appreciative",
+        "content",
+        "happy",
+        "blessed"
+      ],
+      "response_patterns": [
+        "Share in their gratitude",
+        "Celebrate the moment",
+        "Acknowledge goodness",
+        "Encourage expression",
+        "Support appreciation"
+      ],
+      "id": "grateful"
+    },
+    {
+      "id": "satisfied"
+    },
+    {
+      "id": "peaceful"
+    },
+    {
+      "common_causes": [
+        "good_news"
+      ],
+      "response_patterns": [
+        "Show understanding",
+        "Offer support",
+        "Share perspective"
+      ],
+      "id": "happy"
+    },
+    {
+      "id": "serene"
+    },
+    {
+      "type": "emotion",
+      "common_causes": [
+        "major_loss",
+        "heartbreak",
+        "tragic_news",
+        "severe_disappointment",
+        "life_altering_events",
+        "personal_trauma"
+      ],
+      "related_emotions": [
+        "sad",
+        "hopeless",
+        "grief-stricken",
+        "heartbroken",
+        "shocked"
+      ],
+      "response_patterns": [
+        "Offer deep empathy",
+        "Provide steady support",
+        "Acknowledge the pain",
+        "Stay present",
+        "Share resources for help"
+      ],
+      "id": "devastated"
+    },
+    {
+      "type": "emotion",
+      "common_causes": [
+        "personal_loss",
+        "disappointments",
+        "difficult_changes",
+        "failures",
+        "missing_someone",
+        "emotional_pain"
+      ],
+      "related_emotions": [
+        "unhappy",
+        "down",
+        "melancholy",
+        "hurt",
+        "sorrowful"
+      ],
+      "response_patterns": [
+        "Show empathy",
+        "Validate feelings",
+        "Offer comfort",
+        "Stay present",
+        "Provide hope"
+      ],
+      "id": "sad"
+    },
+    {
+      "id": "hopeless"
+    },
+    {
+      "id": "grief-stricken"
+    },
+    {
+      "id": "heartbroken"
+    },
+    {
+      "id": "shocked"
+    },
+    {
+      "id": "discouraged"
+    },
+    {
+      "id": "hurt"
+    },
+    {
+      "id": "let_down"
+    },
+    {
+      "id": "appalled"
+    },
+    {
+      "id": "revolted"
+    },
+    {
+      "id": "outraged"
+    },
+    {
+      "id": "disapproving"
+    },
+    {
+      "id": "self-conscious"
+    },
+    {
+      "id": "uncomfortable"
+    },
+    {
+      "id": "mortified"
+    },
+    {
+      "type": "emotion",
+      "common_causes": [
+        "personal_achievements",
+        "celebrations",
+        "positive_connections",
+        "delightful_surprises",
+        "fulfilled_wishes",
+        "beautiful_moments"
+      ],
+      "related_emotions": [
+        "happy",
+        "excited",
+        "grateful",
+        "elated",
+        "delighted"
+      ],
+      "response_patterns": [
+        "Share their joy",
+        "Celebrate together",
+        "Express happiness",
+        "Encourage savoring",
+        "Support expression"
+      ],
+      "id": "joyful"
+    },
+    {
+      "id": "enthusiastic"
+    },
+    {
+      "type": "emotion",
+      "common_causes": [
+        "spiritual_experiences",
+        "trust_in_others",
+        "belief_systems",
+        "loyal_relationships",
+        "personal_convictions",
+        "hope_in_difficult_times"
+      ],
+      "related_emotions": [
+        "trusting",
+        "hopeful",
+        "confident",
+        "peaceful",
+        "assured"
+      ],
+      "response_patterns": [
+        "Respect their faith",
+        "Support their beliefs",
+        "Share appreciation",
+        "Encourage strength",
+        "Validate their trust"
+      ],
+      "id": "faithful"
+    },
+    {
+      "type": "emotion",
+      "common_causes": [
+        "proven_reliability",
+        "consistent_support",
+        "honest_communication",
+        "shared_values",
+        "demonstrated_integrity",
+        "mutual_respect"
+      ],
+      "related_emotions": [
+        "confident",
+        "secure",
+        "faithful",
+        "assured",
+        "believing"
+      ],
+      "response_patterns": [
+        "Honor trust",
+        "Reinforce connection",
+        "Support openness",
+        "Value relationship",
+        "Maintain reliability"
+      ],
+      "id": "trusting"
+    },
+    {
+      "id": "assured"
+    },
+    {
+      "id": "enraged"
+    },
+    {
+      "id": "livid"
+    },
+    {
+      "id": "indignant"
+    },
+    {
+      "id": "thankful"
+    },
+    {
+      "id": "appreciative"
+    },
+    {
+      "id": "blessed"
+    },
+    {
+      "id": "remorseful"
+    },
+    {
+      "id": "sorry"
+    },
+    {
+      "id": "responsible"
+    },
+    {
+      "id": "optimistic"
+    },
+    {
+      "id": "encouraged"
+    },
+    {
+      "id": "motivated"
+    },
+    {
+      "id": "inspired"
+    },
+    {
+      "type": "emotion",
+      "common_causes": [
+        "exceptional_performance",
+        "unexpected_skill",
+        "remarkable_achievements",
+        "innovative_solutions",
+        "outstanding_qualities",
+        "surprising_talents"
+      ],
+      "related_emotions": [
+        "amazed",
+        "admiring",
+        "inspired",
+        "proud",
+        "respectful"
+      ],
+      "response_patterns": [
+        "Express admiration",
+        "Show genuine interest",
+        "Ask about process",
+        "Share appreciation",
+        "Encourage development"
+      ],
+      "id": "impressed"
+    },
+    {
+      "id": "amazed"
+    },
+    {
+      "id": "admiring"
+    },
+    {
+      "id": "respectful"
+    },
+    {
+      "type": "emotion",
+      "common_causes": [
+        "others_success",
+        "perceived_competition",
+        "relationship_threats",
+        "missed_opportunities",
+        "comparing_achievements",
+        "feeling_left_out"
+      ],
+      "related_emotions": [
+        "envious",
+        "insecure",
+        "resentful",
+        "anxious",
+        "competitive"
+      ],
+      "response_patterns": [
+        "Validate feelings gently",
+        "Focus on personal growth",
+        "Explore underlying needs",
+        "Encourage self-compassion",
+        "Share perspective"
+      ],
+      "id": "jealous"
+    },
+    {
+      "id": "envious"
+    },
+    {
+      "id": "insecure"
+    },
+    {
+      "id": "resentful"
+    },
+    {
+      "id": "competitive"
+    },
+    {
+      "id": "elated"
+    },
+    {
+      "id": "delighted"
+    },
+    {
+      "type": "emotion",
+      "common_causes": [
+        "social_isolation",
+        "missing_connections",
+        "feeling_misunderstood",
+        "being_alone",
+        "lack_of_support",
+        "disconnection"
+      ],
+      "related_emotions": [
+        "sad",
+        "isolated",
+        "melancholy",
+        "empty",
+        "yearning"
+      ],
+      "response_patterns": [
+        "Show presence",
+        "Acknowledge feelings",
+        "Offer connection",
+        "Share understanding",
+        "Suggest gentle activities"
+      ],
+      "id": "lonely"
+    },
+    {
+      "id": "isolated"
+    },
+    {
+      "id": "melancholy"
+    },
+    {
+      "id": "empty"
+    },
+    {
+      "id": "yearning"
+    },
+    {
+      "type": "emotion",
+      "common_causes": [
+        "old_memories",
+        "familiar_places",
+        "childhood_reminders",
+        "past_experiences",
+        "traditional_events",
+        "meaningful_objects"
+      ],
+      "related_emotions": [
+        "sentimental",
+        "melancholy",
+        "wistful",
+        "reflective",
+        "longing"
+      ],
+      "response_patterns": [
+        "Share in reminiscence",
+        "Encourage storytelling",
+        "Validate memories",
+        "Connect past to present",
+        "Appreciate experiences"
+      ],
+      "id": "nostalgic"
+    },
+    {
+      "type": "emotion",
+      "common_causes": [
+        "meaningful_memories",
+        "special_occasions",
+        "personal_treasures",
+        "family_traditions",
+        "life_milestones",
+        "emotional_attachments"
+      ],
+      "related_emotions": [
+        "nostalgic",
+        "touched",
+        "moved",
+        "tender",
+        "affectionate"
+      ],
+      "response_patterns": [
+        "Share in feeling",
+        "Value memories",
+        "Express appreciation",
+        "Honor significance",
+        "Support reflection"
+      ],
+      "id": "sentimental"
+    },
+    {
+      "id": "wistful"
+    },
+    {
+      "id": "reflective"
+    },
+    {
+      "id": "longing"
+    },
+    {
+      "id": "ready"
+    },
+    {
+      "id": "focused"
+    },
+    {
+      "id": "determined"
+    },
+    {
+      "id": "composed"
+    },
+    {
+      "id": "accomplished"
+    },
+    {
+      "id": "fulfilled"
+    },
+    {
+      "id": "successful"
+    },
+    {
+      "id": "unhappy"
+    },
+    {
+      "id": "down"
+    },
+    {
+      "id": "sorrowful"
+    },
+    {
+      "id": "touched"
+    },
+    {
+      "id": "moved"
+    },
+    {
+      "id": "tender"
+    },
+    {
+      "id": "affectionate"
+    },
+    {
+      "type": "emotion",
+      "common_causes": [
+        "unexpected_events",
+        "sudden_changes",
+        "unexpected_news",
+        "unusual_occurrences",
+        "unexpected_outcomes",
+        "revelations"
+      ],
+      "related_emotions": [
+        "amazed",
+        "astonished",
+        "shocked",
+        "startled",
+        "wonder"
+      ],
+      "response_patterns": [
+        "Share surprise",
+        "Process together",
+        "Show interest",
+        "Explore implications",
+        "Support adjustment"
+      ],
+      "id": "surprised"
+    },
+    {
+      "id": "astonished"
+    },
+    {
+      "id": "startled"
+    },
+    {
+      "id": "wonder"
+    },
+    {
+      "id": "panicked"
+    },
+    {
+      "id": "horrified"
+    },
+    {
+      "id": "petrified"
+    },
+    {
+      "id": "scared"
+    },
+    {
+      "id": "secure"
+    },
+    {
+      "id": "believing"
+    },
+    {
+      "type": "instance",
+      "emotion": "happy",
+      "cause": "good_news",
+      "context": "Received a job offer",
+      "timestamp": 1730528413.09842,
+      "id": "happy_1730528413.09842"
+    },
+    {
+      "type": "instance",
+      "emotion": "sad",
+      "cause": "personal_loss",
+      "context": "Grandparent passed away",
+      "timestamp": 1730528413.09842,
+      "id": "sad_1730528413.09842"
+    }
+  ],
+  "links": [
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "afraid",
+      "target": "terrified"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "afraid",
+      "target": "anxious"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "afraid",
+      "target": "apprehensive"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "afraid",
+      "target": "worried"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "afraid",
+      "target": "nervous"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "terrified",
+      "target": "afraid"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "terrified",
+      "target": "panicked"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "terrified",
+      "target": "horrified"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "terrified",
+      "target": "petrified"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "terrified",
+      "target": "scared"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "anxious",
+      "target": "afraid"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "anxious",
+      "target": "apprehensive"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "anxious",
+      "target": "worried"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "anxious",
+      "target": "nervous"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "anxious",
+      "target": "stressed"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "apprehensive",
+      "target": "anxious"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "apprehensive",
+      "target": "afraid"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "apprehensive",
+      "target": "nervous"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "apprehensive",
+      "target": "hesitant"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "apprehensive",
+      "target": "unsure"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "angry",
+      "target": "furious"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "angry",
+      "target": "annoyed"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "angry",
+      "target": "disgusted"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "angry",
+      "target": "frustrated"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "angry",
+      "target": "disappointed"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "furious",
+      "target": "angry"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "furious",
+      "target": "outraged"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "furious",
+      "target": "enraged"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "furious",
+      "target": "livid"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "furious",
+      "target": "indignant"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "annoyed",
+      "target": "angry"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "annoyed",
+      "target": "irritated"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "annoyed",
+      "target": "frustrated"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "annoyed",
+      "target": "impatient"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "annoyed",
+      "target": "displeased"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "disgusted",
+      "target": "angry"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "disgusted",
+      "target": "appalled"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "disgusted",
+      "target": "revolted"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "disgusted",
+      "target": "outraged"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "disgusted",
+      "target": "disapproving"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "disappointed",
+      "target": "sad"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "disappointed",
+      "target": "frustrated"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "disappointed",
+      "target": "discouraged"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "disappointed",
+      "target": "hurt"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "disappointed",
+      "target": "let_down"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "anticipating",
+      "target": "excited"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "anticipating",
+      "target": "hopeful"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "anticipating",
+      "target": "anxious"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "anticipating",
+      "target": "prepared"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "anticipating",
+      "target": "eager"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "excited",
+      "target": "happy"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "excited",
+      "target": "anticipating"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "excited",
+      "target": "joyful"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "excited",
+      "target": "enthusiastic"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "excited",
+      "target": "eager"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "hopeful",
+      "target": "optimistic"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "hopeful",
+      "target": "excited"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "hopeful",
+      "target": "encouraged"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "hopeful",
+      "target": "motivated"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "hopeful",
+      "target": "inspired"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "prepared",
+      "target": "confident"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "prepared",
+      "target": "ready"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "prepared",
+      "target": "focused"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "prepared",
+      "target": "determined"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "prepared",
+      "target": "composed"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "ashamed",
+      "target": "guilty"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "ashamed",
+      "target": "embarrassed"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "ashamed",
+      "target": "disappointed"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "ashamed",
+      "target": "regretful"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "ashamed",
+      "target": "humiliated"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "guilty",
+      "target": "ashamed"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "guilty",
+      "target": "regretful"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "guilty",
+      "target": "remorseful"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "guilty",
+      "target": "sorry"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "guilty",
+      "target": "responsible"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "embarrassed",
+      "target": "ashamed"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "embarrassed",
+      "target": "self-conscious"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "embarrassed",
+      "target": "uncomfortable"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "embarrassed",
+      "target": "anxious"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "embarrassed",
+      "target": "mortified"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "caring",
+      "target": "loving"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "caring",
+      "target": "concerned"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "caring",
+      "target": "empathetic"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "caring",
+      "target": "protective"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "caring",
+      "target": "supportive"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "confident",
+      "target": "proud"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "confident",
+      "target": "prepared"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "confident",
+      "target": "excited"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "confident",
+      "target": "hopeful"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "confident",
+      "target": "empowered"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "proud",
+      "target": "accomplished"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "proud",
+      "target": "confident"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "proud",
+      "target": "satisfied"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "proud",
+      "target": "fulfilled"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "proud",
+      "target": "successful"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "content",
+      "target": "grateful"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "content",
+      "target": "satisfied"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "content",
+      "target": "peaceful"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "content",
+      "target": "happy"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "content",
+      "target": "serene"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "grateful",
+      "target": "thankful"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "grateful",
+      "target": "appreciative"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "grateful",
+      "target": "content"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "grateful",
+      "target": "happy"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "grateful",
+      "target": "blessed"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 1,
+      "source": "happy",
+      "target": "sad"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "devastated",
+      "target": "sad"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "devastated",
+      "target": "hopeless"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "devastated",
+      "target": "grief-stricken"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "devastated",
+      "target": "heartbroken"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "devastated",
+      "target": "shocked"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "sad",
+      "target": "unhappy"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "sad",
+      "target": "down"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "sad",
+      "target": "melancholy"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "sad",
+      "target": "hurt"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "sad",
+      "target": "sorrowful"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "joyful",
+      "target": "happy"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "joyful",
+      "target": "excited"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "joyful",
+      "target": "grateful"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "joyful",
+      "target": "elated"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "joyful",
+      "target": "delighted"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "faithful",
+      "target": "trusting"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "faithful",
+      "target": "hopeful"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "faithful",
+      "target": "confident"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "faithful",
+      "target": "peaceful"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "faithful",
+      "target": "assured"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "trusting",
+      "target": "confident"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "trusting",
+      "target": "secure"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "trusting",
+      "target": "faithful"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "trusting",
+      "target": "assured"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "trusting",
+      "target": "believing"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "impressed",
+      "target": "amazed"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "impressed",
+      "target": "admiring"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "impressed",
+      "target": "inspired"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "impressed",
+      "target": "proud"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "impressed",
+      "target": "respectful"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "jealous",
+      "target": "envious"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "jealous",
+      "target": "insecure"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "jealous",
+      "target": "resentful"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "jealous",
+      "target": "anxious"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "jealous",
+      "target": "competitive"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "lonely",
+      "target": "sad"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "lonely",
+      "target": "isolated"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "lonely",
+      "target": "melancholy"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "lonely",
+      "target": "empty"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "lonely",
+      "target": "yearning"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "nostalgic",
+      "target": "sentimental"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "nostalgic",
+      "target": "melancholy"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "nostalgic",
+      "target": "wistful"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "nostalgic",
+      "target": "reflective"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "nostalgic",
+      "target": "longing"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "sentimental",
+      "target": "nostalgic"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "sentimental",
+      "target": "touched"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "sentimental",
+      "target": "moved"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "sentimental",
+      "target": "tender"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "sentimental",
+      "target": "affectionate"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "surprised",
+      "target": "amazed"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "surprised",
+      "target": "astonished"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "surprised",
+      "target": "shocked"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "surprised",
+      "target": "startled"
+    },
+    {
+      "weight": 1.0,
+      "interaction_count": 0,
+      "source": "surprised",
+      "target": "wonder"
+    },
+    {
+      "type": "instance_of",
+      "source": "happy_1730528413.09842",
+      "target": "happy"
+    },
+    {
+      "type": "instance_of",
+      "source": "sad_1730528413.09842",
+      "target": "sad"
+    }
+  ]
+}

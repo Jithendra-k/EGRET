@@ -1,0 +1,14 @@
+# Core dependencies
+streamlit>=1.24.0
+torch>=2.0.0
+transformers>=4.31.0
+networkx>=3.1
+plotly>=5.15.0
+accelerate>=0.26.0
+
+# Utilities
+python-dotenv>=1.0.0
+pyyaml>=6.0.0
+numpy>=1.24.0
+pandas>=2.0.0
+matplotlib
