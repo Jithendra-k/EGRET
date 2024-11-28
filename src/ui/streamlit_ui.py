@@ -56,43 +56,46 @@ class StreamlitUI:
                         st.empty()
 
     def display_response_options(self, responses: List[Dict]):
-        """Display response options with selection"""
+        """Display response options with dropdown selection"""
         st.session_state.response_options = responses
 
         if responses:
-            response_container = st.container()
-            with response_container:
-                with st.chat_message("assistant"):
-                    st.markdown("_Choose a response:_")
-                    for idx, response in enumerate(responses):
-                        col1, col2 = st.columns([5, 1])
-                        with col1:
-                            st.markdown(f"> {response['text']}")
-                            if st.session_state.show_debug:
-                                st.caption(f"Style: {response['style']}")
-                        with col2:
-                            if st.button("Select", key=f"resp_{idx}"):
-                                self.select_response(idx)
+            with st.chat_message("assistant"):
+                # Display first response as default
+                st.markdown(f"{responses[0]['text']}")
+
+                # Create dropdown for response selection
+                options = {f"Response {i + 1}: {r['text']}": i for i, r in enumerate(responses)}
+                selected_option = st.selectbox(
+                    "Choose a response:",
+                    options.keys(),
+                    key="response_selector",
+                    label_visibility="collapsed"
+                )
+
+                # Get the index of selected response
+                selected_idx = options[selected_option]
+
+                # Add a confirm button
+                if st.button("Confirm Response", key="confirm_response"):
+                    self.select_response(selected_idx)
+
+                if st.session_state.show_debug:
+                    st.caption(f"Style: {responses[selected_idx]['style']}")
 
     def select_response(self, index: int):
-        """Handle response selection"""
-        selected = st.session_state.response_options[index]
-        other_responses = [
-            r for i, r in enumerate(st.session_state.response_options)
-            if i != index
-        ]
+        selected_response = self.model_handler.select_response(
+            st.session_state.messages[-1]["content"],  # Last user message
+            st.session_state.current_emotion,
+            st.session_state.response_options,
+            index
+        )
 
         st.session_state.messages.append({
             "role": "assistant",
-            "content": selected['text'],
+            "content": selected_response['text'],
             "emotion_data": st.session_state.current_emotion
         })
-
-        self.model_handler.graph_processor.update_preference(
-            emotion=st.session_state.current_emotion['emotion'],
-            selected=selected,
-            rejected=other_responses
-        )
 
         st.session_state.response_options = []
         st.session_state.current_emotion = None

@@ -7,8 +7,11 @@ import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM
 import logging
 from dotenv import load_dotenv
+from peft import PeftModel
 from ..graph.graph_processor import GraphProcessor
+from ..preference.response_ranker import ResponseRanker
 from ..utils.prompt_manager import PromptManager
+from ..utils.conversation_manager import ConversationManager
 
 
 class ModelHandler:
@@ -42,29 +45,35 @@ class ModelHandler:
         self.model, self.tokenizer = self._load_model()
         self.graph_processor = GraphProcessor(config_path)
         self.prompt_manager = PromptManager()
+        self.conversation_manager = ConversationManager()
+        self.response_ranker = ResponseRanker()
 
     def _load_model(self):
         """Load model and tokenizer from HuggingFace"""
         try:
-            model_id = self.config['model']['model_id']
-            self.logger.info(f"Loading model from {model_id}")
+            base_model_id = "unsloth/llama-3.2-3b-instruct-bnb-4bit"  # Changed to Unsloth base model
+            adapter_model_id = self.config['model']['model_id']
+            self.logger.info(f"Loading model from {adapter_model_id}")
 
-            # Load tokenizer
             tokenizer = AutoTokenizer.from_pretrained(
-                model_id,
+                base_model_id,
                 token=self.hf_token if self.config['model']['use_auth_token'] else None
             )
 
-            # Load model
-            model = AutoModelForCausalLM.from_pretrained(
-                model_id,
+            base_model = AutoModelForCausalLM.from_pretrained(
+                base_model_id,
                 token=self.hf_token if self.config['model']['use_auth_token'] else None,
                 torch_dtype=torch.float16 if self.device.type == "cuda" else torch.float32,
                 device_map="auto" if self.device.type == "cuda" else None,
                 low_cpu_mem_usage=True
             )
 
-            # Move model to device if not using device_map
+            model = PeftModel.from_pretrained(
+                base_model,
+                adapter_model_id,
+                token=self.hf_token if self.config['model']['use_auth_token'] else None
+            )
+
             if self.device.type == "cpu":
                 model = model.to(self.device)
 
@@ -79,12 +88,13 @@ class ModelHandler:
         with open(config_path, 'r') as f:
             return yaml.safe_load(f)
 
-    def detect_emotion(self, text: str) -> Dict:
+    def detect_emotion(self, text: str, conversation_history: str = "") -> Dict:
         """Task 1: Emotion Detection"""
         try:
             # Create prompt using prompt manager
             prompt = self.prompt_manager.create_emotion_detection_prompt(
                     text=text,
+                    conversation_history=conversation_history,
             )
 
             # Tokenize and generate
@@ -102,7 +112,8 @@ class ModelHandler:
 
             # Decode and parse response
             response = self.tokenizer.decode(outputs[0], skip_special_tokens=True)
-            # print("response: ",response) ##debugging
+            print("=======================================================")
+            print("response: ",response) ##debugging
             parsed_response = self._parse_emotion_response(response)
             print("=======================================================")
             print("Final Parsed Response for emotion and its cause detection: ", parsed_response)
@@ -120,14 +131,14 @@ class ModelHandler:
                 'confidence': 0.0
             }
 
-    def generate_responses(self, text: str, emotion_data: Dict, graph_insights: Dict) -> List[Dict]:
+    def generate_responses(self, text: str, emotion_data: Dict, graph_insights: Dict, conversation_history: str = "") -> List[Dict]:
         """Task 2: Response Generation"""
         try:
             # Create prompt using prompt manager
             print("=======================================================")
             print("Generating response with:", graph_insights)
             prompt = self.prompt_manager.create_response_generation_prompt(
-                text, emotion_data, graph_insights
+                text, emotion_data, graph_insights, conversation_history
             )
 
             # Tokenize and generate multiple responses
@@ -158,7 +169,8 @@ class ModelHandler:
                     'style': style,
                     'score': 1.0
                 })
-
+            print("===================================================")
+            print(responses)
             return responses
 
         except Exception as e:
@@ -171,23 +183,20 @@ class ModelHandler:
 
     def _parse_emotion_response(self, response: str) -> Dict:
         try:
-            # First split the response at "Response:" to get only the model's output
-            if "Response:" in response:
-                actual_response = response.split("Response:")[-1].strip().lower()
-            else:
-                actual_response = response.lower()
-
-            # Now match emotion and cause from the actual response
-            emotion_match = re.search(r"emotion:\s*([^\n]+)", actual_response, re.IGNORECASE)
-            cause_match = re.search(r"cause:\s*([^\n]+)", actual_response, re.IGNORECASE)
+            # Get the model output portion
+            actual_response = response.split("Response:")[
+                -1].strip().lower() if "Response:" in response else response.lower()
 
             # Extract emotion and cause
-            emotion = emotion_match.group(1).strip() if emotion_match else 'neutral'
-            cause = cause_match.group(1).strip() if cause_match else 'unclear'
+            emotion_match = re.search(r"emotion:\s*([^\n:]+)", actual_response, re.IGNORECASE)
+            cause_match = re.search(r"cause:\s*([^\n]+)", actual_response, re.IGNORECASE)
 
-            # Clean up any remaining brackets
-            emotion = emotion.replace('[', '').replace(']', '').strip()
-            cause = cause.replace('[', '').replace(']', '').strip()
+            # Take only the first word for emotion, full phrase for cause
+            emotion_full = emotion_match.group(1).strip() if emotion_match else 'neutral'
+            emotion = emotion_full.split()[0].strip('[]() ') if emotion_full != 'neutral' else 'neutral'
+
+            cause = cause_match.group(1).strip() if cause_match else 'unclear'
+            cause = cause.strip('[]() ')
 
             self.logger.debug(f"Extracted emotion: {emotion}")
             self.logger.debug(f"Extracted cause: {cause}")
@@ -205,6 +214,61 @@ class ModelHandler:
                 'cause': 'unclear',
                 'confidence': 0.0
             }
+
+    # def _parse_emotion_response(self, response: str) -> Dict:
+    #     try:
+    #         # First split the response at "Response:" to get only the model's output
+    #         if "Response:" in response:
+    #             actual_response = response.split("Response:")[-1].strip().lower()
+    #         else:
+    #             actual_response = response.lower()
+    #
+    #         # Now match emotion and cause from the actual response
+    #         emotion_match = re.search(r"emotion:\s*([^\n]+)", actual_response, re.IGNORECASE)
+    #         cause_match = re.search(r"cause:\s*([^\n]+)", actual_response, re.IGNORECASE)
+    #
+    #         # Extract emotion and cause
+    #         emotion = emotion_match.group(1).strip() if emotion_match else 'neutral'
+    #         cause = cause_match.group(1).strip() if cause_match else 'unclear'
+    #
+    #         # Clean up any remaining brackets
+    #         emotion = emotion.replace('[', '').replace(']', '').strip()
+    #         cause = cause.replace('[', '').replace(']', '').strip()
+    #
+    #         self.logger.debug(f"Extracted emotion: {emotion}")
+    #         self.logger.debug(f"Extracted cause: {cause}")
+    #
+    #         return {
+    #             'emotion': emotion,
+    #             'cause': cause,
+    #             'confidence': 1.0 if emotion != 'neutral' else 0.0
+    #         }
+    #
+    #     except Exception as e:
+    #         self.logger.error(f"Error parsing emotion response: {str(e)}")
+    #         return {
+    #             'emotion': 'neutral',
+    #             'cause': 'unclear',
+    #             'confidence': 0.0
+    #         }
+    def select_response(self, message: str, emotion_data: Dict, responses: List[Dict], selected_idx: int) -> None:
+        selected_response = responses[selected_idx]
+
+        # Save to conversation history
+        self.conversation_manager.add_exchange(
+            message,
+            emotion_data,
+            selected_response['text']
+        )
+
+        # Save preference
+        context = {
+            'message': message,
+            'emotion_data': emotion_data
+        }
+        self.response_ranker.save_preference(context, selected_response, responses)
+
+        return selected_response
 
     def _normalize_emotion(self, emotion: str) -> str:
         """Normalize detected emotion to match base patterns"""
@@ -418,8 +482,10 @@ class ModelHandler:
     def process_message(self, text: str) -> Dict:
         """Main message processing pipeline"""
         try:
+            # Get the conversation history if exists
+            conversation_history = self.conversation_manager.get_formatted_history()
             # Step 1: Emotion Detection
-            emotion_data = self.detect_emotion(text)
+            emotion_data = self.detect_emotion(text, conversation_history)
 
             # Step 2: Get graph insights
             graph_insights = self.graph_processor.process_emotion(
@@ -432,8 +498,13 @@ class ModelHandler:
             responses = self.generate_responses(
                 text,
                 emotion_data,
-                graph_insights
+                graph_insights,
+                conversation_history
             )
+
+            # # Save conversation
+            # if responses:
+            #     self.conversation_manager.add_exchange(text, emotion_data, responses[0]['text'])
 
             # Save graph state periodically
             if self.graph_processor.should_save():
