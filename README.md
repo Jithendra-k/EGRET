@@ -44,6 +44,7 @@ EGRET/
 │   │   └── streamlit_ui.py       # Streamlit interface
 │   │
 │   └── utils/
+│   │   ├── conversation_manager.py    # Conversation History Management
 │       └── prompt_manager.py     # Prompt management
 │
 └── tests/
