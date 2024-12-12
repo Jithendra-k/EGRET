@@ -82,7 +82,7 @@ HUGGINGFACE_TOKEN=your_token_here
 1. Update configs/config.yaml:
 ```yaml
 model:
-  model_id: "meta-llama/Llama-3.2-3B-Instruct"
+  model_id: "Jithendra-k/EGRET_LLM"
   use_auth_token: true
   device: "cpu"  # or "cuda" if available
   max_length: 512
@@ -135,8 +135,7 @@ Current implementation status:
 - ✅ Graph Processor: Complete
 - ✅ Base Emotion Patterns: Complete
 - ✅ UI Components: Complete
-- ⏳ Response Ranking: In Progress
-- ⏳ Preference Optimization: In Progress
+- ✅ Preference Optimization: Complete
 
 ## Usage Example
 
